@@ -7,3 +7,10 @@
 //Al secondo click la lampadina si spegne e nel bottone compare la scritta "Accendi"
 //E così via...
 //Per fare questo bonus potremmo aver bisogno del metodo string.includes() :occhiolino:
+
+const button = document.getElementById('bottonediaccensione');
+const lamp = document.querySelector('img');
+
+button.addEventListener('click', function() { 
+    lamp.src = './img/yellow_lamp.png';
+});
